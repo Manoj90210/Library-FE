@@ -57,7 +57,9 @@
           
           <div class="form-group">
             <label>about</label>
-            <editor apiKey="nmo2zbj4fj9nuvzg7hsp0mqp02blv8dydvckh52npgqsbhx7"  formControlName="about" [init]="{height: 500,plugins: 'link'}"></editor>
+            <input type="text" formControlName="about" class="form-control"
+              [ngClass]="{ 'is-invalid': f.about.errors }" />
+            
             <div *ngIf="f.about.errors" class="invalid-feedback">
               <div *ngIf="f.about.errors.required">about is required</div>
             </div>

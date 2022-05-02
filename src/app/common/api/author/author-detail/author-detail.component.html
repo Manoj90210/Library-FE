@@ -61,7 +61,9 @@
           
           <div class="form-group" >
             <label>About</label>
-            <editor apiKey="nmo2zbj4fj9nuvzg7hsp0mqp02blv8dydvckh52npgqsbhx7"   class="editor" formControlName="about" [init]="{height: 500, plugins: 'link'}" ></editor>
+            <input type="text" formControlName="about" class="form-control "
+              />
+            
             <div *ngIf="f2.about.errors" class="invalid-feedback">
               <div *ngIf="f2.about.errors.required">about is required</div>
             </div>
